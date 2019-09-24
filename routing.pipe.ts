@@ -31,8 +31,8 @@ export class RoutingPipe implements PipeTransform {
    * @param name route name
    * @param params route params if exist
    */
-  navigate(name: string, params?: {}){
-    this._router.navigate([this.transform(name, params)]);
+  navigate(name: string, params?: {}, queryParams?: {}){
+    this._router.navigate([this.transform(name, params)], queryParams);
   }
 
   /**

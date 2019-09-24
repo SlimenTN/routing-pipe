@@ -66,7 +66,11 @@ export class SomeComponent implements OnInit {
   }
   
   navigateToSomePathAfterAction(){
+     // to replace params in the path
      this._router.navigate('my_path_name', {id:'1', action:'show'});
+
+     // to add query params
+     this._router.navigate('my_path_name', {id:'1', action:'show'}, {queryParams: {key: 'value'}});
   }
 
 }
