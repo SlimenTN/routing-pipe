@@ -76,4 +76,9 @@ export class SomeComponent implements OnInit {
 }
 ```
 
+or simply if you want to get the path (not navigate to it) you can call the `transform()` function like so:
+```javascript
+let path = this._router.transform('my_path_name', {id:'1', action:'show'});
+```
+
 If you have any thoughts or improvments please feel free to open an issue or pull request.
